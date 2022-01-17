@@ -1,14 +1,30 @@
+import Navbar from '../components/Navbar'
+import Month from '../components/Month'
+import data from '../data'
+
 export default function Home() {
   return (
     <div>
-      <div className="bg-black h-screen">
-        <div
-          className={`absoulte -top-30 blur-[100px] mx-auto 
-          rounded-full h-96 w-96 bg-[radial-gradient(var(--tw-gradient-stops))]
-          from-white/20 via-white/10 to-transparent
-        `}
-        ></div>
+      <div className="bg-[#06020c] min-h-screen ">
+        <main className="min-h-screen">
+          <Navbar />
+
+          <Month
+            data={data.january.data}
+            title={data.january.title}
+            intro={data.january.intro}
+          />
+        </main>
+
+        <main className="bg-white min-h-screen">
+          <Month
+            data={data.february.data}
+            title={data.february.title}
+            intro={data.february.intro}
+            light
+          />
+        </main>
       </div>
     </div>
-  );
+  )
 }
