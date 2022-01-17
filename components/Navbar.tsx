@@ -6,7 +6,7 @@ const Navbar = () => {
     <Container>
       <nav className="text-white flex items-center py-4 gap-x-5 font-medium">
         <Link href="/">
-          <a className="mr-auto font-black text-lg flex items-center">
+          <a className="mr-auto font-black text-base md:text-lg flex items-center">
             <svg
               className="fill-current mr-2"
               width="32"
@@ -24,11 +24,11 @@ const Navbar = () => {
         </Link>
 
         <Link href="/">
-          <a>Nothin</a>
+          <a className="hidden sm:block">Nil</a>
         </Link>
         <Link href="/">
           <a className="p-2 rounded duration-200 bg-gradient-to-l from-orange-500 to-red-600 hover:from-orange-400 hover:to-red-500">
-            For now
+            4now
           </a>
         </Link>
       </nav>
